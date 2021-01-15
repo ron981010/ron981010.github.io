@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-body{
- max-width: 700px;
- margin: 0 auto;
-}
+
 
 img {
-    max-width: 130px;
-    float: right;
-    margin-top: -160px;
-    border-radius: 10px 10px 10px 10px;
-    margin-right: 10px;
+    max-width: 200px;
+    
   }
 
 
@@ -18,7 +12,12 @@ h1, footer {
     background-color:#bd989f;
     text-align: center;
     color: black;
-    border-radius: 5px;
+}
+
+.photohead {
+    background-color:#bd989f;
+    text-align: center;
+    color: black;
 }
 
 h1, h2, p, li, footer{
@@ -28,4 +27,12 @@ h1, h2, p, li, footer{
 h2{
     margin-left: 15px;
     border-bottom: 1.5px solid rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
 }
