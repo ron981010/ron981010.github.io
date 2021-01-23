@@ -20,8 +20,10 @@
     img {
         
          margin-right: 10px;
-    
-      }
+         float:right;
+            
+          }
+      
     .photohead {
     background-color:#bd989f;
     text-align: center;

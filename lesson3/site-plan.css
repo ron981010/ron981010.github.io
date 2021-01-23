@@ -75,38 +75,49 @@ p {
     min-width: 350px;
     margin: auto;
     text-align: center;
-  }
-  .colors th {
+}
+
+.colors th {
     background-color: #999;
-  }
-  .colors td{
+}
+
+.colors td {
     width: 25%;
     height: 3em;
-  }
-  
-  .primary {
+}
+
+.primary {
     background-color: #36454f;
-  }
-  .secondary {
+}
+
+.secondary {
     background-color: rgb(209, 157, 157);
-  }
-  .accent1 {
+}
+
+.accent1 {
     background-color: rgb(113, 104, 153);
-  }
-  .accent2{
+}
+
+.accent2 {
     background-color: rgb(223, 223, 223);
-  }
-  
-  .imgindex {
+}
+
+.imgindex {
     max-width: 250px;
-  }   /* #1d1d1b */
-   footer {
+}
+
+/* #1d1d1b */
+footer {
     background-color: #36454f;
     text-align: center;
     color: white;
     padding: 1px;
-   }
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 
 @media only screen and (min-width: 37.5em) {
