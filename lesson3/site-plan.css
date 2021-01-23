@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap");
+
+body {
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 10% 0%;
+    padding: 0px 50px 0px 50px;
+    position: relative;
+    font-family: Montserrat, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #36454f;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: #bbb;
+    color: #36454f;
+}
+
+.active {
+    color: yellow;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+.logo img {
+    max-width: 70px;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #11270B;
+    font-family: "Roboto Slab", Georgia, serif;
+}
+
+h2 {
+    margin-bottom: -0.5em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #36454f;
+  }
+  .secondary {
+    background-color: rgb(209, 157, 157);
+  }
+  .accent1 {
+    background-color: rgb(113, 104, 153);
+  }
+  .accent2{
+    background-color: rgb(223, 223, 223);
+  }
+  
+  .imgindex {
+    max-width: 250px;
+  }   /* #1d1d1b */
+   footer {
+    background-color: #36454f;
+    text-align: center;
+    color: white;
+    padding: 1px;
+   }
+
+
+
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
