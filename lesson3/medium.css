@@ -1,0 +1,21 @@
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+
+    body {
+        background: url("background.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 10% 0%;
+        padding: 0px 50px 0px 50px;
+        position: relative;
+    }
+
+}
