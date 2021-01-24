@@ -3,7 +3,12 @@
 body {
     background: none;
     font-family: Montserrat, Verdana, sans-serif;
-    }
+}
+
+p {
+    font-family: Montserrat, Verdana, sans-serif;
+}
+
 
 nav {
     background-color: #36454f;
