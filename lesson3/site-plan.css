@@ -91,22 +91,22 @@ p {
 }
 
 .secondary {
-    background-color: rgb(209, 157, 157);
+    background-color: #dd6e42;
 }
 
 .accent1 {
-    background-color: rgb(113, 104, 153);
+    background-color:#e8dab2;
 }
 
 .accent2 {
-    background-color: rgb(223, 223, 223);
+    background-color: #c0d6df;
 }
 
 .imgindex {
     max-width: 250px;
 }
 
-/* #1d1d1b */
+/* #1d1d1b */ 
 footer {
     background-color: #36454f;
     text-align: center;
@@ -119,6 +119,9 @@ a {
     color: black;
 }
 
+.personaimg {
+    max-width: 280px;
+}
 
 @media only screen and (min-width: 37.5em) {
 
