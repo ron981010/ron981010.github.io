@@ -3,40 +3,14 @@ function toggleMenu() {
 
 }
 
-let daynames = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-
-let d  = new Date();
-let hours       = d.getHours();
-let minutes     = d.getMinutes();
-let dayName     = daynames[d.getDay()];
-let monthName   = months[d.getMonth()];
-let year        = d.getFullYear();
-
-let banner = document.getElementById("banner");
-if (d.getDay() === 6) {
-        banner.style.display = "block";
-} else {
-        banner.style.display = "none";
-}
+function Settoday(){
+    var today = new Date() ;
+   // var weekday = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;
+   var weekday = today.getDate(); 
+    if(weekday== "1"){
+        document.getElementById("Fri").style.display="block";
+    }else{
+        document.getElementById("others").style.display="block";
+    }
+     
+  }
