@@ -3,13 +3,6 @@ function toggleMenu() {
 
 }
 
-let banner = document.getElementById("banner");
-if (d.getDay() === 6) {
-        banner.style.display = "block";
-} else {
-        banner.style.display = "none";
-}
-
 let daynames = [
     "Sunday",
     "Monday",
@@ -41,3 +34,9 @@ let dayName     = daynames[d.getDay()];
 let monthName   = months[d.getMonth()];
 let year        = d.getFullYear();
 
+let banner = document.getElementById("banner");
+if (d.getDay() === 6) {
+        banner.style.display = "block";
+} else {
+        banner.style.display = "none";
+}
