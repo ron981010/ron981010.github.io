@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Whateride information about activities">
+
+    <title>Weatheride web page</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <script src="js/portal.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body onload="GetFileInfo()">
+
+    <div id="Fri" style="display:none">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <div id="others" style="display:none">
+    </div>
+
+    <section class=headersection>
+        <header>
+            <div class="logo">
+                <img src="images/iconfinder_fog-cloud_110834.png" alt="logo">
+            </div>
+            <div>
+                <h1>Weatheride</h1>
+                <h2 class=decorationhead>The perfect time for the perfect place </h2>
+            </div>
+        </header>
+    </section>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class=active><a href="ron981010.github.io\lesson9\index.html">Home</a></li>
+            <li><a href="ron981010.github.io/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="ron981010.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="ron981010.github.io/lesson7/gallery-7.html/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="clearfix"><br>
+        <h2>Welcome to Idaho</h2>
+
+        <div class="hero"></div>
+        <picture class="photoA">
+            <source media="(max-width: 200px)" srcset="images\rain.jpg">
+            <source media="(max-width: 500px)" srcset="images\rain.jpg">
+            <source media="(max-width: 800px)" srcset="images\rain.jpg">
+            <img src="images\rain.jpg" alt="park">
+        </picture>
+        </div>
+        <section>
+            <h2>Town Information</h2>
+            <div class="cards">
+            </div>
+        </section>
+        <div class="textadd">
+
+            This page is for introducing many locations in Idaho, and this can know the weather and storm information.
+            Good thing about this site, you can report storm infromation so that we can share weather as soon as
+            possible.
+
+        </div>
+
+        <section class="contact">
+            <div class="map">
+                <img src="images/map.jpg" alt="map">
+            </div>
+            <div class="information">
+                <h2>Contact Information</h2>
+                <p>254 658 365</p>
+                <p>mail@preston.com</p>
+                <p>65 Map Street</p>
+                <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/faceicon.png"
+                        alt="facebook logo" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/insticon.png"
+                        alt="instagram logo" /></a>
+                <a href="https://www.youtube.com" target="_blank"><img class="social" src="images/youtubeicon.png"
+                        alt="youtube logo" /></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class=footercontent>
+            <p>&copy; 2021 | Ronald Acarapi | Bolivia |
+                <a href="https://www.byui.edu/online">BYU-I Online Learning</a> | <br> <a
+                    href="https://ron981010.github.io/index.html#">Home Page</a>
+            </p>
+            <p><span id="currentDate"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
