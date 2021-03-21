@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Whateride information about activities">
+
+    <title>Weatheride web page</title>
+    /
+    <link href="lesson8/css/normalize.css" rel="stylesheet">
+    <link href="lesson8/css/small.css" rel="stylesheet">
+    <link href="lesson8/css/medium.css" rel="stylesheet">
+    <link href="lesson8/css/large.css" rel="stylesheet">
+
+    <script src="lesson8/js/portal.js"></script>
+    <script src="lesson8/js/scripts.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+
+    <div id="Fri" style="display:none">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <div id="others" style="display:none">
+    </div>
+
+    <section class=headersection>
+        <header>
+            <div class="logo">
+                <img src="lesson8/images/iconfinder_fog-cloud_110834.png" alt="logo">
+            </div>
+            <div>
+                <h1>Weatheride</h1>
+                <h2 class=decorationhead>The perfect time for the perfect place </h2>
+            </div>
+        </header>
+    </section>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://ron981010.github.io/lesson11/index.html">Home</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/preston.html">Preston</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li class=active><a href="https://ron981010.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix"><br>
+        <h2>Received</h2>
+
+        <h3>Thank you for your response. We will process your report shortly.</h3>
+        
+    </main>
+    <section class="contact">
+        <div class="map">
+            <img src="lesson8/images/map.jpg" alt="map">
+        </div>
+        <div class="information">
+            <h2>Contact Information</h2>
+            <p>254 658 365</p>
+            <p>mail@preston.com</p>
+            <p>65 Map Street</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="lesson8/images/faceicon.png"
+                    alt="facebook logo" /></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="lesson8/images/insticon.png"
+                    alt="instagram logo" /></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="social" src="lesson8/images/youtubeicon.png"
+                    alt="youtube logo" /></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class=footercontent>
+            <p>&copy; 2021 | Ronald Acarapi | Bolivia |
+                <a href="https://www.byui.edu/online">BYU-I Online Learning</a> | <br> <a
+                    href="https://ron981010.github.io/index.html#">Home Page</a>
+            </p>
+            <p><span id="currentDate"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
