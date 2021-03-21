@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Whateride information about activities">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weatheride web page</title>
+
+    <link href="lesson10/css/normalize.css" rel="stylesheet">
+    <link href="lesson10/css/small.css" rel="stylesheet">
+    <link href="lesson10/css/medium.css" rel="stylesheet">
+    <link href="lesson10/css/large.css" rel="stylesheet">
+
+    <script src="lesson11/jssoda/portal.js"></script>
+    <script src="lesson11/jssoda/scripts.js"></script>
+    <script src="lesson11/jssoda/currentweatherapi.js"></script>
+    <script src="lesson11/jssoda/forecast.js"></script>
+    <script src="lesson11/jssoda/eventssoda.js"></script>
+</head>
+
+<body onload="GetFileInfo()">
+
+    <div id="Fri" style="display:none">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <div id="others" style="display:none">
+    </div>
+
+    <section class=headersection>
+        <header>
+            <div class="logo">
+                <img src="lesson10/images/iconfinder_fog-cloud_110834.png" alt="logo">
+            </div>
+            <div>
+                <h1>Weatheride</h1>
+                <h2 class=decorationhead>The perfect time for the perfect place </h2>
+            </div>
+        </header>
+    </section>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="https://ron981010.github.io/lesson11/index.html">Home</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/preston.html">Preston</a></li>
+            <li class=active><a href="https://ron981010.github.io/lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://ron981010.github.io/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="preston">Soda Springs</h1>
+        <div class="hero-div">
+            <div class="hero-ph">
+                <img class="heroimg" src="lesson10/images/pexels-maria-orlova-4947362.jpg" alt="hero img">
+            </div>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Weather: <span id="weather"></span></p>
+                <p>Tempreture: <span id="temp"></span>F</p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Chill: <span id="wind"></span>F</p>
+                <p>Wind Speed: <span id="speed"></span>mph</p>
+            </section>
+        </div>
+        <div class="container">
+            <h3>5 Day Forecast</h3>
+            <table class="weather" border="1">
+                <tr>
+                    <th>
+                        <p><span id="dayofWeek1"></span>:<span id="forecast1"></span>&deg; F</p>
+                    </th>
+                    <th>
+                        <p><span id="dayofWeek2"></span>:<span id="forecast2"></span>&deg; F</p>
+                    </th>
+                    <th>
+                        <p><span id="dayofWeek3"></span>:<span id="forecast3"></span>&deg; F</p>
+                    </th>
+                    <th>
+                        <p><span id="dayofWeek4"></span>:<span id="forecast4"></span>&deg; F</p>
+                    </th>
+                    <th>
+                        <p><span id="dayofWeek5"></span>:<span id="forecast5"></span>&deg; F</p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p><span id="image1"></span>&nbsp;<img src="" alt="" id="icon1"></p>
+                    </td>
+                    <td>
+                        <p><span id="image2"></span>&nbsp;<img src="" alt="" id="icon2"></p>
+                    </td>
+                    <td>
+                        <p><span id="image3"></span>&nbsp;<img src="" alt="" id="icon3"></p>
+                    </td>
+                    <td>
+                        <p><span id="image4"></span>&nbsp;<img src="" alt="" id="icon4"></p>
+                    </td>
+                    <td>
+                        <p><span id="image5"></span>&nbsp;<img src="" alt="" id="icon5"></p>
+                    </td>
+                </tr>
+
+
+            </table>
+
+            <div class="sodacard"><h4>Upcoming Events</h4></div>
+
+            <div class="article">
+                <p class="article-paragraph">The city is named for the hundreds of natural springs of carbonated water
+                    that are located in and around the city.[6] The springs were well known to Native Americans and were
+                    a famous landmark along the Oregon Trail in the middle 19th century. Today the city is also known as
+                    the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were
+                    looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of
+                    highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for
+                    weeks, and flooding the downtown area, it was capped and manually released when requested as a
+                    tourist attraction. Now it is let loose every hour on the hour by a timed release valve. Its height
+                    and volume have not decreased after many years. There are viewing platforms at either end of the
+                    travertine mound where the geyser erupts. Interpretive signs are located on the platforms explaining
+                    this phenomenon.</p>
+                <img class="article-img" src="lesson7\gallery-7.html\images\sunny.jpg" alt="imgarticle">
+            </div>
+        </div>
+    </main>
+    <section class="contact">
+        <div class="map">
+            <img src="lesson10/images/map.jpg" alt="map">
+        </div>
+        <div class="information">
+            <h2>Contact Information</h2>
+            <p>254 658 365</p>
+            <p>mail@preston.com</p>
+            <p>65 Map Street</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="lesson10/images/faceicon.png"
+                    alt="facebook logo" /></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="lesson10/images/insticon.png"
+                    alt="instagram logo" /></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="social" src="lesson10/images/youtubeicon.png"
+                    alt="youtube logo" /></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class=footercontent>
+            <p>&copy; 2021 | Ronald Acarapi | Bolivia |
+                <a href="https://www.byui.edu/online">BYU-I Online Learning</a> | <br> <a
+                    href="https://ron981010.github.io/index.html#">Home Page</a> | <a
+                    href="https://openweathermap.org/">Thanks to Openweathermap</a>
+            </p>
+            <p><span id="currentDate"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
